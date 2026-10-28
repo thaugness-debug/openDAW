@@ -9,4 +9,5 @@ rustup default stable >/dev/null 2>&1 || rustup toolchain install stable --profi
 rustup target add wasm32-unknown-unknown
 rustup toolchain install nightly --profile minimal --component rust-src
 rustup target add wasm32-unknown-unknown --toolchain nightly
-CI=false npx turbo build --filter=@opendaw/app-studio --output-logs=errors-only
+rustup show active-toolchain
+CI=false npx turbo build --filter=@opendaw/app-studio --env-mode=loose --output-logs=errors-only
