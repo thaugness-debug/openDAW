@@ -8,8 +8,7 @@ const BrowserPanel = PanelState.create({
     name: "Lyder",
     icon: IconSymbol.Panel,
     panelType: PanelType.BrowserPanel,
-    constrains: {type: "flex", minSize: 300, maxSize: 300, flex: 0},
-    minimized: false
+    constrains: {type: "flex", minSize: 300, maxSize: 300, flex: 0}
 })
 const DevicesPanel = PanelState.create({
     type: "panel",
@@ -91,8 +90,7 @@ export const DefaultWorkspace = Object.freeze({
                             name: "Piano roll",
                             icon: IconSymbol.Pencil,
                             panelType: PanelType.ContentEditor,
-                            constrains: {type: "flex", minSize: 248, flex: 1.5},
-                            minimized: false
+                            constrains: {type: "flex", minSize: 248, flex: 1.5}
                         }),
                         DevicesPanel
                     ],
