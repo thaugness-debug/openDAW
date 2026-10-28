@@ -1,0 +1,49 @@
+component
+  display: flex
+  flex-direction: column
+  row-gap: 10px
+  pointer-events: all
+  padding: 4px 0
+
+  > h4
+    margin: 0
+    font-size: 12px
+    font-weight: 500
+    color: rgba(white, 0.7)
+
+  > .tiles
+    display: flex
+    flex-wrap: wrap
+    gap: 8px
+
+    > .tile
+      --tile-color: white
+      width: 104px
+      height: 84px
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      row-gap: 3px
+      border-radius: 10px
+      border: 1px solid color-mix(in srgb, var(--tile-color) 45%, transparent)
+      background: color-mix(in srgb, var(--tile-color) 12%, transparent)
+      color: var(--tile-color)
+      cursor: pointer
+      font: inherit
+      transition: background 0.1s, transform 0.1s
+
+      &:hover
+        background: color-mix(in srgb, var(--tile-color) 24%, transparent)
+        transform: translateY(-1px)
+
+      svg
+        font-size: 22px
+
+      .title
+        font-size: 13px
+        font-weight: 600
+
+      .subtitle
+        font-size: 10px
+        color: rgba(white, 0.65)

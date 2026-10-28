@@ -1,5 +1,5 @@
 import css from "./Footer.sass?inline"
-import {createElement, Frag, LocalLink, replaceChildren} from "@opendaw/lib-jsx"
+import {createElement, Frag, replaceChildren} from "@opendaw/lib-jsx"
 import {isDefined, isNotNull, Lifecycle, Nullable, Terminator, TimeSpan} from "@opendaw/lib-std"
 import {StudioService} from "@/service/StudioService"
 import {Surface} from "@/ui/surface/Surface"
@@ -202,7 +202,8 @@ export const Footer = ({lifecycle, service}: Construct) => {
                  })}/>
             <div style={{flex: "1"}}/>
             <div style={{color: Colors.cream.toString()}}>
-                <LocalLink href="/privacy">Privacy</LocalLink> · <LocalLink href="/imprint">Imprint</LocalLink>
+                <a href="https://github.com/thaugness-debug/openDAW" target="_blank" rel="noopener"
+                   style={{color: "inherit"}}>Bygget på openDAW (AGPL-3.0) · Kildekode</a>
             </div>
         </footer>
     )

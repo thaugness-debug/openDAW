@@ -5,19 +5,20 @@ import {IconSymbol} from "@opendaw/studio-enums"
 
 const BrowserPanel = PanelState.create({
     type: "panel",
-    name: "Browser",
+    name: "Lyder",
     icon: IconSymbol.Panel,
     panelType: PanelType.BrowserPanel,
     constrains: {type: "flex", minSize: 300, maxSize: 300, flex: 0},
-    minimized: true
+    minimized: false
 })
 const DevicesPanel = PanelState.create({
     type: "panel",
-    name: "Devices",
+    name: "Lyd-innstillinger",
     icon: IconSymbol.Flask,
     panelType: PanelType.DevicePanel,
     notPopoutable: true,
-    constrains: {type: "fixed", fixedSize: 248}
+    constrains: {type: "fixed", fixedSize: 248},
+    minimized: true
 })
 const NotepadPanel = PanelState.create({
     type: "panel",
@@ -80,18 +81,18 @@ export const DefaultWorkspace = Object.freeze({
                     contents: [
                         PanelState.create({
                             type: "panel",
-                            name: "Timeline",
+                            name: "Låt",
                             icon: IconSymbol.Timeline,
                             panelType: PanelType.Timeline,
                             constrains: {type: "flex", minSize: 94, flex: 2}
                         }),
                         PanelState.create({
                             type: "panel",
-                            name: "Editor",
+                            name: "Piano roll",
                             icon: IconSymbol.Pencil,
                             panelType: PanelType.ContentEditor,
-                            constrains: {type: "flex", minSize: 248, flex: 1},
-                            minimized: true
+                            constrains: {type: "flex", minSize: 248, flex: 1.5},
+                            minimized: false
                         }),
                         DevicesPanel
                     ],
@@ -99,7 +100,7 @@ export const DefaultWorkspace = Object.freeze({
                 },
                 PanelState.create({
                     type: "panel",
-                    name: "Mixer",
+                    name: "Mikser",
                     icon: IconSymbol.Mixing,
                     panelType: PanelType.Mixer,
                     constrains: {type: "flex", minSize: 20, maxSize: 480, flex: 0.25},

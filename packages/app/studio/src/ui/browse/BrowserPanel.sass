@@ -7,5 +7,11 @@ component
   row-gap: 1px
   overflow: hidden
 
+  :root.simple-mode &
+    grid-template-rows: auto 32px 1fr
+
   > *
     @include colors.panel-background
+
+  > .sound-picker
+    padding: 12px

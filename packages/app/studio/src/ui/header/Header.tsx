@@ -24,6 +24,7 @@ import {CaptureMidiButton} from "@/ui/header/CaptureMidiButton"
 import {MidiAccessButton} from "@/ui/header/MidiAccessButton"
 import {TourAnchors} from "@/ui/tour/TourAnchors"
 import {Checkbox} from "@/ui/components/Checkbox"
+import {SimpleMode} from "@/ui/simple/SimpleMode"
 
 const className = Html.adoptStyleSheet(css, "Header")
 
@@ -60,6 +61,11 @@ export const Header = ({lifecycle, service}: Construct) => {
         })
     }))
     const {preferences} = service.engine
+    lifecycle.own(SimpleMode.enabled.catchupAndSubscribe(owner => {
+        if (!owner.getValue()) {return}
+        service.timeline.primaryVisibility.markers.setValue(false)
+        service.timeline.clips.visible.setValue(false)
+    }))
     const transport: HTMLElement = <TransportGroup lifecycle={lifecycle} service={service}/>
     const timecodes: HTMLElement = <TimeStateDisplay lifecycle={lifecycle} service={service}/>
     const manuals: HTMLAnchorElement = (
@@ -87,34 +93,47 @@ export const Header = ({lifecycle, service}: Construct) => {
             <MenuButton root={service.menu}
                         onInit={element => TourAnchors.register(lifecycle, element, "menu")}
                         appearance={{color: Colors.gray, activeColor: Colors.bright, tinyTriangle: true}}>
-                <h5>openDAW</h5>
+                <h5>Dropverket</h5>
             </MenuButton>
             <hr/>
-            <div style={{display: "flex", alignItems: "center", columnGap: "4px"}}>
-                {manuals}
-                {spotlight}
-            </div>
+            <Checkbox lifecycle={lifecycle}
+                      model={SimpleMode.enabled}
+                      appearance={{color: Colors.gray, activeColor: Colors.green, cursor: "pointer",
+                          tooltip: "Enkel modus skjuler avanserte verktøy"}}>
+                <span style={{fontSize: "11px"}}>Enkel modus</span>
+            </Checkbox>
             <hr/>
+            <div className="advanced-only" style={{display: "contents"}}>
+                <div style={{display: "flex", alignItems: "center", columnGap: "4px"}}>
+                    {manuals}
+                    {spotlight}
+                </div>
+                <hr/>
+            </div>
             <Group onInit={element => StudioPreferences.catchupAndSubscribe(enabled =>
                 element.classList.toggle("hidden", !enabled), "visibility", "enable-history-buttons")}>
                 <UndoRedoButtons lifecycle={lifecycle} service={service}/>
                 <hr/>
             </Group>
-            <div style={{display: "flex", columnGap: "4px"}}
-                 onInit={element => TourAnchors.register(lifecycle, element, "midi")}>
-                <MidiAccessButton lifecycle={lifecycle}/>
-                <CaptureMidiButton lifecycle={lifecycle} service={service}/>
+            <div className="advanced-only" style={{display: "contents"}}>
+                <div style={{display: "flex", columnGap: "4px"}}
+                     onInit={element => TourAnchors.register(lifecycle, element, "midi")}>
+                    <MidiAccessButton lifecycle={lifecycle}/>
+                    <CaptureMidiButton lifecycle={lifecycle} service={service}/>
+                </div>
+                <hr/>
             </div>
-            <hr/>
             {transport}
             <hr/>
             {timecodes}
-            <BaseFrequencyControl lifecycle={lifecycle} service={service}/>
-            <hr/>
-            <MetronomeControl lifecycle={lifecycle}
-                              service={service}
-                              preferences={preferences}/>
-            <hr/>
+            <div className="advanced-only" style={{display: "contents"}}>
+                <BaseFrequencyControl lifecycle={lifecycle} service={service}/>
+                <hr/>
+                <MetronomeControl lifecycle={lifecycle}
+                                  service={service}
+                                  preferences={preferences}/>
+                <hr/>
+            </div>
             <div style={{flex: "1 0 0"}}/>
             {
                 location.origin.includes("dev.opendaw.studio")
@@ -122,7 +141,7 @@ export const Header = ({lifecycle, service}: Construct) => {
             <div style={{flex: "2 0 0"}}/>
             <HorizontalPeakMeter lifecycle={lifecycle} peaksInDb={peaksInDb} width="4em"/>
             <hr/>
-            <div className="panel-selector" onInit={element => TourAnchors.register(lifecycle, element, "screens")}>
+            <div className="panel-selector advanced-only" onInit={element => TourAnchors.register(lifecycle, element, "screens")}>
                 <RadioGroup lifecycle={lifecycle}
                             model={new class implements ObservableValue<Nullable<Workspace.ScreenKeys>> {
                                 setValue(value: Nullable<Workspace.ScreenKeys>): void {
@@ -149,8 +168,10 @@ export const Header = ({lifecycle, service}: Construct) => {
                                 }))}
                             appearance={{framed: true, landscape: true}}/>
             </div>
-            <hr/>
-            <PerformanceStats lifecycle={lifecycle} service={service}/>
+            <div className="advanced-only" style={{display: "contents"}}>
+                <hr/>
+                <PerformanceStats lifecycle={lifecycle} service={service}/>
+            </div>
         </header>
     )
 }

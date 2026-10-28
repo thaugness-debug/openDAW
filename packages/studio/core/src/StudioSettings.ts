@@ -32,10 +32,10 @@ export const StudioSettingsSchema = z.object({
         "clips": z.boolean(),
         "follow-cursor": z.boolean()
     }).default({
-        "markers": true,
+        "markers": false,
         "tempo": false,
         "signature": false,
-        "clips": true,
+        "clips": false,
         "follow-cursor": false
     }),
     "appearance": z.object({

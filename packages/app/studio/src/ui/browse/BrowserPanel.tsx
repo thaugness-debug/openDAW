@@ -9,6 +9,7 @@ import {Html} from "@opendaw/lib-dom"
 import {SoundfontBrowser} from "@/ui/browse/SoundfontBrowser"
 import {TourAnchors} from "@/ui/tour/TourAnchors"
 import {Colors} from "@opendaw/studio-enums"
+import {SoundPicker} from "@/ui/simple/SoundPicker"
 
 const className = Html.adoptStyleSheet(css, "BrowserPanel")
 
@@ -50,6 +51,9 @@ export const BrowserPanel = ({lifecycle, service}: Construct) => {
     TourAnchors.register(lifecycle, tabs, "samples", "soundfonts")
     return (
         <div className={className}>
+            <div className="simple-only sound-picker">
+                <SoundPicker lifecycle={lifecycle} service={service}/>
+            </div>
             {tabs}
             {placeholder}
         </div>

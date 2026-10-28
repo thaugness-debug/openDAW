@@ -24,8 +24,8 @@ export const Dashboard = ({lifecycle, service}: Construct) => (
     <div className={className}>
         <div className="intro">
             <header className="hero">
-                <h1>openDAW</h1>
-                <div className="tagline">Create Music Online</div>
+                <h1>Dropverket</h1>
+                <div className="tagline">Lag din egen festival-låt</div>
             </header>
             <ActionButtons lifecycle={lifecycle} service={service}/>
         </div>
@@ -33,7 +33,7 @@ export const Dashboard = ({lifecycle, service}: Construct) => (
             <div className="panel">
                 <Resources lifecycle={lifecycle} service={service}/>
             </div>
-            <div className="rail">
+            <div className="rail advanced-only">
                 <HelpFeedback/>
                 <Backup service={service}/>
                 <Links/>
@@ -42,6 +42,8 @@ export const Dashboard = ({lifecycle, service}: Construct) => (
                 <Contributors/>
             </div>
         </div>
-        <IntroTiles/>
+        <div className="advanced-only">
+            <IntroTiles/>
+        </div>
     </div>
 )
