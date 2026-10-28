@@ -10,4 +10,4 @@ rustup target add wasm32-unknown-unknown
 rustup toolchain install nightly --profile minimal --component rust-src
 rustup target add wasm32-unknown-unknown --toolchain nightly
 rustup show active-toolchain
-CI=false npx turbo build --filter=@opendaw/app-studio --env-mode=loose --output-logs=errors-only
+CI=false npx turbo build --filter=@opendaw/app-studio --env-mode=loose --force --output-logs=errors-only
