@@ -34,7 +34,7 @@ type Construct = {
 }
 
 const location = new DefaultObservableValue(AssetLocation.OpenDAW)
-const LicenseNote = "Royalty-free, not licensed for redistribution"
+const LicenseNote = "Dropverket-lyder · trommer CC0 (MckAudio TR-8, M. Fischer TR-808)"
 const expandedKeys = new Set<string>()
 
 export const SampleBrowser = ({lifecycle, service, background, fontSize}: Construct) => {

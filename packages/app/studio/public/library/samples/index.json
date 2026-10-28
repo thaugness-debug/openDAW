@@ -1,0 +1,453 @@
+{
+ "version": 1,
+ "updatedAt": "2026-10-28",
+ "folders": [
+  {
+   "name": "Trommer",
+   "folders": [
+    {
+     "name": "Kick",
+     "samples": [
+      {
+       "uuid": "fa1ce6f2-c354-5d3b-880d-c986f76a07f3",
+       "name": "Festival Kick",
+       "bpm": 0,
+       "duration": 0.45,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "28db5a01-acdd-5c5c-afcb-e61fbb18cd5a",
+       "name": "Festival Kick (hard)",
+       "bpm": 0,
+       "duration": 0.42,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "238a97ba-828e-5646-a06e-196d9ae17d14",
+       "name": "909 Kick 1",
+       "bpm": 0,
+       "duration": 0.4209,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "caf45f0c-5fee-55f5-a0e9-a26e798a2569",
+       "name": "909 Kick 2",
+       "bpm": 0,
+       "duration": 0.4421,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "a6208462-ece8-5838-82e3-72fcb7256156",
+       "name": "909 Kick 3",
+       "bpm": 0,
+       "duration": 0.5816,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "345602c1-b4bc-50d9-8950-e0e1a9c420d9",
+       "name": "909 Attack Kick",
+       "bpm": 0,
+       "duration": 0.3876,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "32f1e917-511c-577e-b05d-22eab754fd20",
+       "name": "808 Kick",
+       "bpm": 0,
+       "duration": 0.4986,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "56cf2598-db89-5273-93cc-e546515f62d8",
+       "name": "808 Kick lang",
+       "bpm": 0,
+       "duration": 3.5727,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "20dfbc0a-ae07-58cf-8e5d-2aac86ca8231",
+       "name": "808 Kick (ekte maskin)",
+       "bpm": 0,
+       "duration": 1.0888,
+       "sample_rate": 48000
+      }
+     ]
+    },
+    {
+     "name": "Clap og snare",
+     "samples": [
+      {
+       "uuid": "6c5128e2-5ac7-5cf3-8c77-b0035962d7fe",
+       "name": "Festival Clap",
+       "bpm": 0,
+       "duration": 0.6,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "bb536bb3-221a-5b58-8520-bf03028abe00",
+       "name": "909 Clap",
+       "bpm": 0,
+       "duration": 0.2754,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "d8f6781f-99f3-5824-8a6d-050d89c49b14",
+       "name": "909 Clap lang",
+       "bpm": 0,
+       "duration": 0.4914,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "7804c1be-365d-5b9d-8713-8999becc8e5e",
+       "name": "808 Clap",
+       "bpm": 0,
+       "duration": 0.3491,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "e9ff3168-5ca5-5770-a4e2-b3ab17f5d070",
+       "name": "909 Snare 1",
+       "bpm": 0,
+       "duration": 0.2894,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "22de3860-d6f9-5fb2-bdfa-7e8c5b223735",
+       "name": "909 Snare 2",
+       "bpm": 0,
+       "duration": 0.2943,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "5243f000-e62a-57fc-8b14-86d6de4ebf29",
+       "name": "909 Snare 3",
+       "bpm": 0,
+       "duration": 0.3226,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "b6c9f3f6-b8b0-5f08-9886-7156e1537bef",
+       "name": "808 Snare",
+       "bpm": 0,
+       "duration": 0.2296,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "118b7a6e-9989-59a1-ba3f-9fb4d4d811e2",
+       "name": "Finger-snap",
+       "bpm": 0,
+       "duration": 0.1842,
+       "sample_rate": 48000
+      }
+     ]
+    },
+    {
+     "name": "Hi-hats og cymbaler",
+     "samples": [
+      {
+       "uuid": "b269f838-ff89-57b9-ae68-bb361cb8efa5",
+       "name": "909 Closed Hat",
+       "bpm": 0,
+       "duration": 0.1753,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "0bb4f8f6-1edb-52ad-a571-2a3cece649d1",
+       "name": "909 Closed Hat kort",
+       "bpm": 0,
+       "duration": 0.1057,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "ed12c724-67f0-5ac6-82cb-ef28ee040514",
+       "name": "909 Open Hat",
+       "bpm": 0,
+       "duration": 0.5474,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "ca6fd55e-ba6b-56ea-bd23-46a0b56d1128",
+       "name": "808 Closed Hat",
+       "bpm": 0,
+       "duration": 0.1152,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "0693b74f-d5e2-5d21-91a2-0482094b537b",
+       "name": "808 Open Hat",
+       "bpm": 0,
+       "duration": 0.406,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "acd8fa2f-441a-5375-b7e4-ad996329fe23",
+       "name": "909 Ride",
+       "bpm": 0,
+       "duration": 2.1567,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "afd19ba6-7ec5-5bf6-a4d2-e31eb893abbd",
+       "name": "909 Crash",
+       "bpm": 0,
+       "duration": 0.9278,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "755d6643-da91-53fc-b1e9-06406e650404",
+       "name": "Crash med hall",
+       "bpm": 0,
+       "duration": 0.9278,
+       "sample_rate": 48000
+      }
+     ]
+    },
+    {
+     "name": "Perkusjon",
+     "samples": [
+      {
+       "uuid": "9700177f-532a-5591-806e-4d9a609278f9",
+       "name": "Shaker",
+       "bpm": 0,
+       "duration": 0.039,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "bec27c43-09d4-5b10-ac35-3a75518b92cc",
+       "name": "Tamburin",
+       "bpm": 0,
+       "duration": 0.1743,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "2808b84d-904c-5b22-ac38-02358c68bbfb",
+       "name": "909 Rim",
+       "bpm": 0,
+       "duration": 0.1181,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "5aa031bf-4b5f-5c0b-bbc7-ab047e40b0d3",
+       "name": "Cowbell",
+       "bpm": 0,
+       "duration": 1.1355,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "8fc0debb-f153-5ad8-b592-0cd738293a12",
+       "name": "Conga",
+       "bpm": 0,
+       "duration": 0.3364,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "48f9aa57-faa9-5223-a8ee-a0cc0ae9cdaf",
+       "name": "Claves",
+       "bpm": 0,
+       "duration": 0.0597,
+       "sample_rate": 48000
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Loops 128 BPM",
+   "folders": [
+    {
+     "name": "Trommer",
+     "samples": [
+      {
+       "uuid": "9c6773fb-146b-5c9e-9996-00f4b6122a81",
+       "name": "House-beat full",
+       "bpm": 128,
+       "duration": 7.5,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "d673817e-ee03-5f92-8a86-a211d8fed89a",
+       "name": "Kick og clap",
+       "bpm": 128,
+       "duration": 7.5,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "6f7bdbc4-f20c-5692-b85d-09b8fc5e9ea0",
+       "name": "Bare kick",
+       "bpm": 128,
+       "duration": 7.5,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "da2f179d-f86e-5bb7-aa50-9aa16bff9615",
+       "name": "Topp-loop (hats og shaker)",
+       "bpm": 128,
+       "duration": 7.5,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "02d9a2b9-6dba-5383-9d42-8d6f1399f63a",
+       "name": "Snare-virvel bygg-opp (4 takter)",
+       "bpm": 128,
+       "duration": 7.5,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "d24748c2-6435-53ac-9eb3-fbbf8aef1b93",
+       "name": "Snare-virvel bygg-opp (8 takter)",
+       "bpm": 128,
+       "duration": 15.0,
+       "sample_rate": 48000
+      }
+     ]
+    },
+    {
+     "name": "Akkorder (A-moll)",
+     "samples": [
+      {
+       "uuid": "0cdd9130-0d84-5294-b8b5-0e3d35513896",
+       "name": "Supersaw-akkorder med pump",
+       "bpm": 128,
+       "duration": 7.5,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "d64686bc-9b24-5aed-89ec-2513ca68b000",
+       "name": "Supersaw-akkorder uten pump",
+       "bpm": 128,
+       "duration": 7.5,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "234aec13-8dd5-521e-a346-60d82c8bf251",
+       "name": "Offbeat-stabs",
+       "bpm": 128,
+       "duration": 7.5,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "bdd1f215-cd07-52cc-a934-d7cf19b4a16d",
+       "name": "Festival-stabs (rytme)",
+       "bpm": 128,
+       "duration": 7.5,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "703bcc38-8839-5f15-929c-5c6a8dd04a11",
+       "name": "Myk pad",
+       "bpm": 128,
+       "duration": 7.5,
+       "sample_rate": 48000
+      }
+     ]
+    },
+    {
+     "name": "Bass (A-moll)",
+     "samples": [
+      {
+       "uuid": "e8be9265-f30f-5b34-bdfb-c64a32b978fc",
+       "name": "Offbeat-bass",
+       "bpm": 128,
+       "duration": 7.5,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "5e6e6e69-876d-5039-b635-65a1e8e2d19e",
+       "name": "Rullende bass",
+       "bpm": 128,
+       "duration": 7.5,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "02938e4f-d005-51fc-a37b-fae70ba668e8",
+       "name": "Sub-bass lange toner",
+       "bpm": 128,
+       "duration": 7.5,
+       "sample_rate": 48000
+      }
+     ]
+    },
+    {
+     "name": "Melodi (A-moll)",
+     "samples": [
+      {
+       "uuid": "62909f39-50cf-53f5-921a-ef2fc91cfc3f",
+       "name": "Pluck-melodi",
+       "bpm": 128,
+       "duration": 7.5,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "88eccaf1-54a6-5827-8a7a-7127d4e568b2",
+       "name": "Pluck-arpeggio",
+       "bpm": 128,
+       "duration": 7.5,
+       "sample_rate": 48000
+      },
+      {
+       "uuid": "8ffb89bf-a514-57db-bfc6-26525bfefcfb",
+       "name": "Supersaw-lead (drop)",
+       "bpm": 128,
+       "duration": 7.5,
+       "sample_rate": 48000
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Effekter",
+   "samples": [
+    {
+     "uuid": "81c30c67-8c37-5ed9-863b-f0236910fe85",
+     "name": "Riser hvit støy (4 takter)",
+     "bpm": 128,
+     "duration": 7.5,
+     "sample_rate": 48000
+    },
+    {
+     "uuid": "1ed66174-6d8a-50b2-ad8f-9874539c3508",
+     "name": "Riser hvit støy (8 takter)",
+     "bpm": 128,
+     "duration": 15.0,
+     "sample_rate": 48000
+    },
+    {
+     "uuid": "7560eafb-759a-52bb-97c4-a42a8db8c359",
+     "name": "Pitch-riser (8 takter)",
+     "bpm": 128,
+     "duration": 15.0,
+     "sample_rate": 48000
+    },
+    {
+     "uuid": "faa41f22-5f16-5a61-93ff-b9be36b7ac20",
+     "name": "Downlifter (2 takter)",
+     "bpm": 128,
+     "duration": 3.75,
+     "sample_rate": 48000
+    },
+    {
+     "uuid": "e9dcbeae-49c3-5191-991d-7dd6dc045df8",
+     "name": "Reverse crash",
+     "bpm": 0,
+     "duration": 0.9278,
+     "sample_rate": 48000
+    },
+    {
+     "uuid": "6335789f-f503-5443-b8c2-e1c09e1b4e9d",
+     "name": "Impact (boom)",
+     "bpm": 0,
+     "duration": 3.0,
+     "sample_rate": 48000
+    },
+    {
+     "uuid": "877a360e-5e6e-55f5-8c6b-b2ba39ebc471",
+     "name": "Sub drop",
+     "bpm": 0,
+     "duration": 2.0,
+     "sample_rate": 48000
+    }
+   ]
+  }
+ ]
+}
